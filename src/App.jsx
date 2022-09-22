@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import QuoteBox from './components/QuoteBox'
+// import QuoteBox from './components/QuoteBox'
+import QuoteContent from './components/QuoteContent'
 import quotes from './json/quotes.json'
-import { randomColors } from './components/ColorRandom'
+import { randomColors } from './utils/ColorRandom'
 
 function App () {
   const getIndexRandom = arr => Math.floor(Math.random() * arr.length)
@@ -17,7 +18,7 @@ function App () {
   console.log(color)
   return (
     <div style={{ backgroundColor: rColors }} className='App'>
-      <QuoteBox
+      <QuoteContent
         randomQuote={randomQuote} setRandomQuote={setRandomQuote}
         randomColors={rColors}
         getRandomAll={getRandomAll}
