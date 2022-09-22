@@ -15,13 +15,15 @@ p {
   text-align: justify;
 }
 
-p, h1 {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+p {
+  margin-top: .1rem;
+  margin-bottom: 1rem;
  
 }
 
 h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: right;
   font-size: 48px; 
 }
@@ -41,7 +43,6 @@ h1 {
 
 }
 
-
 .card__quote {
   font-size: 2em;
  
@@ -52,7 +53,6 @@ h1 {
   margin-left: auto;
   color: white;
   text-align: center;
-  vertical-align: center;
   font-size: 2rem;
   border: none;
   width: 4rem;
@@ -64,4 +64,13 @@ h1 {
   filter: brightness(1.2);
   transform: scale(1.15);
   transition: filter 100ms ease, transform 100ms ease;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: .1rem;
+}
+.quote__img {
+  text-align: left;
+  font-size: 48px; 
 }
